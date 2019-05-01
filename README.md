@@ -1,0 +1,2 @@
+# MyMagazineLikeRozetkaUA
+my testprojectDevInternetShop
