@@ -19,7 +19,10 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = [
-    url(r'^polls/',include('polls.urls')),
-    url(r'^admin/', admin.site.urls),
-    url(r'^',include('landing.urls')),
+    url(r'^polls/',include('polls.urls')),# тестовое 
+    url(r'^admin/', admin.site.urls),# админка 
+    url(r'',include('landing.urls')), # 127....:8000 сразу попадаем на лейндинг пакет где хранится форма "регистрации"
+    url(r'^',include('orders.urls')),#
+    url(r'^',include('products.urls')),
+
 ]
